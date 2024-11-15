@@ -31,6 +31,7 @@ using the new api.
 Below is a list of features currently included in this branch _on top of_
 the official ZMK master branch.
 
+-**adaptive keys** PR [2042](https://github.com/zmkfirmware/zmk/pull/2042)
 - **pointer movement/scrolling** - PR #2027
 - **tri-state (aka swapper)** - PR [#1366](https://github.com/zmkfirmware/zmk/pull/1366)
 - **smart-word** (PR [#1451](https://github.com/zmkfirmware/zmk/pull/1451))
@@ -43,11 +44,11 @@ your `zmk-config/config` directory with the following contents:
 ```
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
+    - name: ascaletty
+      url-base: https://github.com/ascaletty
   projects:
-    - name: zmk
-      remote: urob
+    - name: myzmk
+      remote: ascaletty
       revision: main
       import: app/west.yml
   self:
